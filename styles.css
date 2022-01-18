@@ -1,0 +1,151 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+.container {
+    height: 100vh;
+    background-image: url(../images/calvin-hobbes.jpg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 10% 5%;
+}
+
+.main-link {
+  background: rgb(145 145 145 / 30%);
+  backdrop-filter: saturate(180%) blur(5px);
+  border-radius: 10px;
+  width: 175px;
+  height: 175px;
+  padding: 15px;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  color: #c5c8c5;
+}
+
+.main-link:hover {
+  background-color: rgb(202 119 0 / 40%);
+}
+
+/* .main-link h4 {
+  font-size: 1.5rem;
+  color: #c5c8c5;
+} */
+
+.faded {
+    opacity: 25%;
+}
+
+/* MODAL SECTION */
+
+.modal {
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  /* z-index: -10; */
+  padding: 25px 50px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  display: none;
+}
+
+.show-modal {
+  display: flex;
+}
+
+/* .modal-menu {
+  width: 100%;
+  height: 450px;
+  border-radius: 20px;
+  padding: 25px 50px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  display: flex;
+} */
+
+.tile {
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: saturate(180%) blur(10px);
+    border-radius: 10px;
+    height: 120px;
+    width: 120px;
+    padding: 10px;
+    margin: 15px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-decoration: none;
+    display: none;
+}
+
+.show-tile {
+  display: flex;
+}
+
+.tile:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.link-text {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+}
+
+.full-size {
+    width: 100%;
+}
+
+.half-size {
+    width: 50%;
+}
